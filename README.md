@@ -52,33 +52,17 @@ Eine installierbare App wird mit folgendem Skript erzeugt:
 
 Das Ergebnis liegt anschließend unter `dist/`.
 
-## Auf GitHub veröffentlichen
-
-Eine kurze Anleitung für das erste Repository, den initialen Commit und den Release-Tag steht in [docs/PUBLISHING.md](docs/PUBLISHING.md). Ein Tag wie `v1.0` startet automatisch den Release-Workflow und hängt das erzeugte macOS-Archiv an den GitHub Release an.
 
 ## Daten und Netzwerkzugriffe
 
 Archiv, Lesestatus, Watchlist, Tags und Notizen werden im lokalen Benutzerverzeichnis gespeichert. Der Reader ruft die konfigurierten RSS-/Atom-Adressen und den öffentlichen CISA-KEV-Katalog ab. Erkannte CVE-Nummern können für zusätzliche Sachinformationen an FIRST EPSS übermittelt werden. Einzelheiten stehen in [PRIVACY.md](PRIVACY.md).
 
-## Projektstruktur
-
-```text
-AppBundle/                         Metadaten und App-Symbole
-Scripts/build-app.sh              lokaler Release-Build
-Sources/SeifertSecurityReader/    Anwendungscode und Logo
-Tests/                            automatisierte Tests
-.github/workflows/                GitHub Actions
-```
-
-Weitere technische Informationen stehen in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
 ## Mitwirken
 
 Fehlerberichte und Verbesserungsvorschläge sind willkommen. Bitte zuerst [CONTRIBUTING.md](CONTRIBUTING.md) lesen. Sicherheitsprobleme sollten entsprechend [SECURITY.md](SECURITY.md) nicht als öffentliches Issue gemeldet werden.
 
-## Lizenz
 
-Für dieses Repository wurde noch keine Open-Source-Lizenz festgelegt. Sichtbarkeit auf GitHub allein gewährt keine Erlaubnis zur Weiterverwendung, Veränderung oder Weiterverteilung des Quellcodes. Vor der öffentlichen Freigabe sollte der Rechteinhaber eine passende Lizenz auswählen.
 
 ---
 
