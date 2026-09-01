@@ -1,0 +1,29 @@
+name: Build and test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  macos:
+    runs-on: macos-14
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Tests ausführen
+        run: swift test
+
+      - name: App-Paket erstellen
+        run: bash Scripts/build-app.sh
+
+      - name: App-Paket bereitstellen
+        uses: actions/upload-artifact@v4
+        with:
+          name: seifert-it-Security-Reader-macOS
+          path: dist/*.zip
