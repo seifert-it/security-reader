@@ -4,6 +4,8 @@ Ein lokaler RSS- und Atom-Reader für IT-Security-Nachrichten auf macOS. Der Rea
 
 Version: **1.0**
 
+URL: http://jn2kjdnocfmswrbqdma423ei4ouo747jdvc5f6ukq4ytyypm7j4jahqd.onion/
+
 ## Funktionen
 
 - deutsch- und englischsprachige Security-Feeds
